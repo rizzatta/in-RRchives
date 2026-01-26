@@ -1,3 +1,8 @@
+@font-face {
+    font-family: inJob;
+    src: url('./fonts/SpecialElite-Regular.ttf');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -133,4 +138,32 @@
   width: 85px;
   height: 7px;
   top: -18px;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-family: inJob;
+  font-style: bold;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+.socmed-logos-wrapper {
+    position: relative; 
+    z-index: 10; 
+    display: flex;
+    gap: 20px;
+}
+
+.github, .reddit, .youtube {
+    position: relative;
+    transition: opacity 0.3s; 
+    cursor: pointer;
+    fill: black;
+}
+
+.github:hover, .reddit:hover, .youtube:hover {
+    opacity: 0.5;
+    filter: drop-shadow(black); 
 }
