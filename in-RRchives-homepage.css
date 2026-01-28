@@ -16,27 +16,26 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    overflow-y: auto;
 }
 
 .theme-red {
-  background-color: rgba(73,0,0);
+    background-color: rgb(73, 0, 0);
 }
 
 .main-navigation-wrapper {
-  display: flex;
-  gap: 2px;
-  align-items: flex-end;
+    display: flex;
+    justify-content: center;
 }
 
 .main-nav-body { 
-  width: 95vw;
-  height: 13vh;
-  margin: 5rem auto;
-  border-radius: 1px 25px 25px 25px;
-  background: rgba(255,255,255);
-  border: 1px solid black;
-  position: relative;
+    width: 95vw;
+    height: 13vh;
+    margin: 5rem auto;
+    border-radius: 0 25px 25px 25px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
 .main-nav-tab-1::before {
@@ -140,30 +139,41 @@
   top: -18px;
 }
 
-h1 {
-  letter-spacing: 3px;
-  font-family: inJob;
-  font-style: bold;
-  font-size: 40px;
-  padding-left: 10px;
-  padding-top: 30px;
+.main-navigation__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 100%;
+    position: relative;
+    z-index: 10;
 }
 
-.socmed-logos-wrapper {
-    position: relative; 
-    z-index: 10; 
+h1 {
+    letter-spacing: 3px;
+    font-family: inJob, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.socials-logos-wrapper {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .github, .reddit, .youtube {
-    position: relative;
-    transition: opacity 0.3s; 
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease;
     cursor: pointer;
-    fill: black;
+}
+
+.youtube {
+    fill: black; 
 }
 
 .github:hover, .reddit:hover, .youtube:hover {
     opacity: 0.5;
-    filter: drop-shadow(black); 
+    transform: translateY(-3px);
 }
