@@ -24,6 +24,12 @@
     padding: 0;
 }
 
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
 .page-background {
     position: fixed;
     top: 0;
@@ -42,10 +48,16 @@
     justify-content: center;
 }
 
+.main-navigation-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
 .main-nav-body { 
     width: 95vw;
     height: 13vh;
-    margin: 5rem auto;
+    margin: 4rem auto;
     border-radius: 0 25px 25px 25px;
     background: rgba(255, 255, 255, 1);
     border: 1px solid white;
@@ -222,4 +234,15 @@ h2 {
 .github:hover, .reddit:hover, .youtube:hover {
     opacity: 0.5;
     transform: translateY(-3px);
+}
+
+.main-content {
+    width: 95vw;
+    margin: 0 auto;
+    padding-top: 2rem; 
+
+.content-container {
+    min-height: 150vh; 
+    color: white; 
+    font-family: montserrat-medium, sans-serif;
 }
