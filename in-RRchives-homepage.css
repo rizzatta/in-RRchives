@@ -4,8 +4,18 @@
 }
 
 @font-face {
-    font-family: SFPro;
+    font-family: montserrat-medium;
     src: url('./fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: montserrat-semibold-italic;
+    src: url('./fonts/Montserrat-SemiBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: montserrat-semibold;
+    src: url('./fonts/Montserrat-SemiBold.ttf');
 }
 
 * {
@@ -40,7 +50,6 @@
     background: rgba(255, 255, 255, 1);
     border: 1px solid white;
     position: relative;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
 .main-nav-tab-1::before {
@@ -53,17 +62,17 @@
     background: rgba(255,255,255); 
     border-radius: 25px 25px 0 0;
     clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
-    filter: drop-shadow(0px -2px 2px rgba(0,0,0,0.2));
     z-index: 4;
 }
 
 .main-nav-tab-1::after {
-  content: '';
-  position: absolute;
-  left: 37px;
-  width: 85px;
-  height: 7px;
-  top: -18px;
+    content: '';
+    position: absolute;
+    left: 45px;
+    width: 85px;
+    height: 7px;
+    top: -18px;
+    z-index: 4;
 }
 
 .main-nav-tab-2::before {
@@ -78,17 +87,20 @@
     -webkit-backdrop-filter: blur(8px);
     border-radius: 25px 25px 0 0;
     clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
-    filter: drop-shadow(0px -2px 2px rgba(0,0,0,0.2));
     z-index: 3;
 }
 
 .main-nav-tab-2::after {
-  content: '';
-  position: absolute;
-  left: 165px;
-  width: 85px;
-  height: 7px;
-  top: -18px;
+    content: 'ACHIEVEMENTS';
+    font-family: montserrat-semibold-italic;
+    font-size: 13px;
+    color: rgb(73, 0, 0);
+    position: absolute;
+    left: 185px;
+    width: 85px;
+    height: 7px;
+    top: -18px;
+    z-index: 3;
 }
 
 .main-nav-tab-3::before {
@@ -103,17 +115,20 @@
     -webkit-backdrop-filter: blur(8px); 
     border-radius: 25px 25px 0 0;
     clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
-    filter: drop-shadow(0px -2px 2px rgba(0,0,0,0.2));
     z-index: 2;
 }
 
 .main-nav-tab-3::after {
-  content: '';
-  position: absolute;
-  left: 295px;
-  width: 85px;
-  height: 7px;
-  top: -18px;
+    content: 'PROJECTS';
+    font-family: montserrat-semibold-italic;
+    font-size: 13px;
+    color: rgb(73, 0, 0);
+    position: absolute;
+    left: 335px;
+    width: 85px;
+    height: 7px;
+    top: -18px;
+    z-index: 2;
 }
 
 .main-nav-tab-4::before {
@@ -128,16 +143,18 @@
     -webkit-backdrop-filter: blur(8px); 
     border-radius: 25px 25px 0 0;
     clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
-    filter: drop-shadow(0px -2px 2px rgba(0,0,0,0.2));
 }
 
 .main-nav-tab-4::after {
-  content: '';
-  position: absolute;
-  left: 427px;
-  width: 85px;
-  height: 7px;
-  top: -18px;
+    content: 'EMPLOYMENT';
+    font-family: montserrat-semibold-italic;
+    font-size: 13px;
+    color: rgb(73, 0, 0);
+    position: absolute;
+    left: 450px;
+    width: 85px;
+    height: 7px;
+    top: -18px;
 }
 
 .main-navigation__inner {
@@ -162,13 +179,14 @@ h1 {
     font-family: inJob, serif;
     font-weight: bold;
     font-size: 40px;
+    color: rgb(73, 0, 0);
 }
 
 h2 {  
-  letter-spacing: 3px;
-  font-family: SFPro;
-  font-size: 20px;
-  font-weight: normal;
+    letter-spacing: 3px;
+    font-family: montserrat-medium;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .socials-logos-wrapper {
@@ -177,16 +195,8 @@ h2 {
     align-items: center;
 }
 
-.github {
-    width: 50px;
-    height: 60px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    fill: black;
-}
-
 .reddit {
-    width: 50px;
+    width: 33px;
     height: 40px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -194,15 +204,19 @@ h2 {
 }
 
 .youtube {
-    width: 50px;
+    width: 35px;
     height: 47px;
     transition: all 0.3s ease;
     cursor: pointer;
     fill: black;
 }
 
-.youtube {
-    fill: black; 
+.github {
+    width: 40px;
+    height: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    fill: black;
 }
 
 .github:hover, .reddit:hover, .youtube:hover {
