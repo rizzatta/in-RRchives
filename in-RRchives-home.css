@@ -13,11 +13,6 @@
     src: url('./fonts/Montserrat-SemiBoldItalic.ttf');
 }
 
-@font-face {
-    font-family: montserrat-semibold;
-    src: url('./fonts/Montserrat-SemiBold.ttf');
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -236,10 +231,16 @@ h2 {
     transform: translateY(-3px);
 }
 
+.profile-header {
+    display: flex;
+    justify-content: center;
+}
+
 .main-content {
     width: 95vw;
     margin: 0 auto;
     padding-top: 2rem; 
+}
 
 .content-container {
     min-height: 150vh; 
