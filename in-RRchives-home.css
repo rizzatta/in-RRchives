@@ -236,6 +236,11 @@ h2 {
     justify-content: center;
 }
 
+.profile-header__name-wrap{
+    color: black;
+    z-index: 10;
+}
+
 .main-content {
     width: 95vw;
     margin: 0 auto;
