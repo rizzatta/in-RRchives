@@ -13,6 +13,11 @@
     src: url('./fonts/Montserrat-SemiBoldItalic.ttf');
 }
 
+@font-face {
+    font-family: montserrat-bold;
+    src: url('./fonts/Montserrat-Bold.ttf');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -236,9 +241,26 @@ h2 {
     justify-content: center;
 }
 
+.profile-header__headshot-wrap {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.img {
+    width: 50%;
+}
+
 .profile-header__name-wrap{
+    content: 'Colis, Rizza Mae Wagas';
+    font-family: montserrat-bold;
     color: black;
-    z-index: 10;
+    position: absolute;
+    left: 45px;
+    width: 85px;
+    height: 7px;
+    top: -18px;
+    z-index: 4;
 }
 
 .main-content {
