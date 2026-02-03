@@ -254,7 +254,7 @@ h2 {
 }
 
 .profile-header__name-wrap{
-    content: 'Colis, Rizza Mae Wagas';
+    content: '';
     position: absolute;
     top: 50%; 
     left: 50%;
@@ -268,8 +268,10 @@ h2 {
 .profile-header__name-wrap h1 {
     color: black; 
     font-family: montserrat-bold; 
-    font-size: 10vw; 
+    font-size: 3vw; 
     opacity: 0.5; 
+    text-align: right;
+    padding-right: 10%;
 }
 
 .main-content {
