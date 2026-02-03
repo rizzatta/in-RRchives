@@ -49,7 +49,6 @@ body {
 }
 
 .main-navigation-bar {
-    position: sticky;
     top: 0;
     z-index: 100; 
 }
@@ -85,6 +84,10 @@ body {
     height: 7px;
     top: -18px;
     z-index: 4;
+}
+
+.main-nav-tab-1::after:hover {
+    background-color: white;
 }
 
 .main-nav-tab-2::before {
@@ -245,7 +248,7 @@ h2 {
 
 .profile-header__headshot-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: auto;
 }
 
@@ -273,6 +276,8 @@ h2 {
     text-align: right;
     padding-right: 10%;
 }
+
+
 
 .main-content {
     width: 95vw;
