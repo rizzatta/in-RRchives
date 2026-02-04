@@ -249,7 +249,7 @@ h2 {
 .profile-header__headshot-wrap {
     display: flex;
     justify-content: left;
-    margin: auto;
+    padding-right: 30%;
 }
 
 .img {
@@ -277,7 +277,9 @@ h2 {
     padding-right: 10%;
 }
 
+.profile-header__stat-block--dl {
 
+}
 
 .main-content {
     width: 95vw;
