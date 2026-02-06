@@ -9,6 +9,8 @@
         |   |  |   |    |   |                    |   |   \   \    |   |   \   \
         |___|  |___|    |___|                    |___|    \___\   |___|    \___\chives
 # in-RRchives
-A website dedicated to R.M.W. Colis and her achievements, projects, and job experiences as an aspiring IT sector professional.
+A website dedicated to R.M.W. Colis and her achievements, projects, and job experiences as an aspiring IT sector professional. 
+[EVERYTHING IS STILL UNDER CONSTRUCTION, EVEN THE README.]
+
 
 
