@@ -347,7 +347,7 @@ h2 {
 }
 
 .profile-header__stat-block--dl {
-
+    content: '';
 }
 
 .main-content {
