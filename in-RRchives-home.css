@@ -327,7 +327,7 @@ h2 {
 .profile-header__headshot-wrap {
     display: flex;
     justify-content: left;
-    padding-right: 30%;
+    padding-right: 15%;
 }
 
 .img {
@@ -356,8 +356,62 @@ h2 {
 }
 
 .profile-header__stat-block--dl {
-    content: '';
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 10px 30px;
+    justify-content: flex-end; 
+    margin-top: 2rem;
+    color: black;
+    font-family: montserrat-medium, sans-serif;
+    font-size: 14px;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end right;
 }
+
+.profile-header__stat-block--major {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 30px;
+    justify-content: flex-end; 
+    margin-top: 2rem;
+    color: black;
+    font-family: montserrat-medium, sans-serif;
+    font-size: 14px;
+    opacity: 0.7;
+    flex-direction: column;
+    align-items: flex-end right;
+}
+
+.profile-header__stat-block--year {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 10px 30px;
+    justify-content: flex-end; 
+    margin-top: 2rem;
+    color: black;
+    font-family: montserrat-medium, sans-serif;
+    font-size: 14px;
+    opacity: 0.7;
+    flex-direction: column;
+    align-items: flex-end right;
+}
+
+.stat-block__label {
+    font-family: montserrat-bold, sans-serif;
+    font-size: 16px; 
+    color: black; 
+    opacity: 0.8;
+    margin-bottom: 2px;
+}
+
+
+.stat-block__stat {
+    font-family: montserrat-medium, sans-serif;
+    font-size: 14px;
+    color: black;
+    opacity: 0.5;
 
 .main-content {
     width: 95vw;
