@@ -185,23 +185,32 @@ body {
     display: flex;
     align-items: baseline; 
     gap: 3px; 
+    flex-direction: row;
+    padding: 0 !important;
+    margin: 0 !important;
 } 
 
 h1 {
-    padding-left: -30px;
-    padding-top: 10px;
+    margin: 0;
+    padding: 0;
     letter-spacing: 3px;
     font-family: inJob, serif;
     font-weight: bold;
     font-size: 40px;
     color: rgb(73, 0, 0);
+    line-height: 1;
 }
 
 h2 {  
+    margin: 0;
+    padding: 0;
     letter-spacing: 3px;
     font-family: montserrat-medium;
-    font-size: 20px;
+    font-style: italic; 
+    font-size: 15px; 
     font-weight: normal;
+    text-align: right; 
+    line-height: 1;
 }
 
 .socials-logos-wrapper {
@@ -312,7 +321,7 @@ h2 {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: -3rem;
+    margin-top: 0.2rem;
 }
 
 .profile-header__headshot-wrap {
