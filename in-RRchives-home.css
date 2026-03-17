@@ -327,14 +327,14 @@ h2 {
 .profile-header__headshot-wrap {
     display: flex;
     justify-content: left;
-    padding-right: 15%;
+    padding-right: 35%;
 }
 
 .img {
     width: 50%;
 }
 
-.profile-header__name-wrap{
+.profile-header__name-wrap {
     content: '';
     position: absolute;
     top: 50%; 
@@ -347,12 +347,19 @@ h2 {
 }
 
 .profile-header__name-wrap h1 {
-    color: black; 
+    color: white; 
     font-family: montserrat-bold; 
-    font-size: 3vw; 
+    font-size: 4vw; 
     opacity: 0.5; 
     text-align: right;
     padding-right: 10%;
+}
+
+.profile-header__name-wrap h2 {
+    padding-right: 10%; 
+    color: gray; 
+    font-size: 1vw;
+    opacity: 0.5;
 }
 
 .profile-header__stat-block--dl {
@@ -372,7 +379,7 @@ h2 {
 
 .profile-header__stat-block--major {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto; 
     gap: 10px 30px;
     justify-content: flex-end; 
     margin-top: 2rem;
@@ -380,6 +387,7 @@ h2 {
     font-family: montserrat-medium, sans-serif;
     font-size: 14px;
     opacity: 0.7;
+    display: flex;
     flex-direction: column;
     align-items: flex-end right;
 }
@@ -394,6 +402,7 @@ h2 {
     font-family: montserrat-medium, sans-serif;
     font-size: 14px;
     opacity: 0.7;
+    display: flex;
     flex-direction: column;
     align-items: flex-end right;
 }
@@ -412,6 +421,7 @@ h2 {
     font-size: 14px;
     color: black;
     opacity: 0.5;
+}
 
 .main-content {
     width: 95vw;
