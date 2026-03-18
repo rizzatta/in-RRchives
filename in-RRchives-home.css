@@ -248,6 +248,107 @@ h2 {
     transform: translateY(-3px);
 }
 
+/* ---------------- PROFILE HEADER (DESKTOP) ----------------- */
+
+.profile-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 5%;
+    margin-top: -3rem; 
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-header__headshot-wrap {
+    width: 45%; 
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    max-width: 450px; 
+}
+
+.profile-header__info-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 30px; 
+    width: 50%;
+}
+
+.profile-header__name-wrap {
+    width: 100%;
+    text-align: right;
+}
+
+.profile-header__name-wrap h1 {
+    color: white; 
+    font-family: montserrat-bold; 
+    font-size: 4vw; 
+    opacity: 0.7; 
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.profile-header__name-wrap h2 {
+    color: rgba(255, 255, 255, 0.5); 
+    font-size: 1.2vw;
+}
+
+/* ---------------- STATUS BLOCK STYLES ---------------- */
+
+.status-blocks-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between the separated blocks */
+    /* Removed the background styles from the wrapper */
+}
+
+.profile-header__stat-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.25); 
+    padding: 15px 25px; 
+    border-radius: 15px; 
+    backdrop-filter: blur(5px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 130px; 
+    width: 100%
+}
+
+.stat-block__label {
+    font-family: montserrat-bold, sans-serif;
+    font-size: 16px; 
+    color: rgba(255, 255, 255, 0.9); 
+    margin-bottom: 5px;
+}
+
+.stat-block__stat {
+    font-family: montserrat-medium, sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+/* ---------------- MAIN CONTENT ----------------- */
+
+.main-content {
+    width: 95vw;
+    margin: 0 auto;
+    padding-top: 2rem; 
+}
+
+.content-container {
+    min-height: 150vh; 
+    color: white; 
+    font-family: montserrat-medium, sans-serif;
+}
+
+
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
 
 @media (max-width: 768px) {
@@ -263,9 +364,7 @@ h2 {
         padding: 20px;
         gap: 15px;
     }
-}
 
-@media (max-width: 768px) {
     .main-nav-tab-1::before, .main-nav-tab-2::before, 
     .main-nav-tab-3::before, .main-nav-tab-4::before {
         display: none; 
@@ -280,9 +379,7 @@ h2 {
         margin: 5px 10px;
         font-size: 11px;
     }
-}
 
-@media (max-width: 768px) {
     h1 {
         font-size: 28px; 
         text-align: center;
@@ -295,144 +392,43 @@ h2 {
     .profile-header {
         flex-direction: column;
         align-items: center;
-        margin-top: 0;
+        margin-top: 0; 
     }
 
     .profile-header__headshot-wrap {
-        padding: 0; 
-        justify-content: center;
         width: 100%;
+        margin-bottom: 2rem;
     }
 
     .img {
         width: 70%; 
     }
 
+    .profile-header__info-wrap {
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-header__name-wrap {
+        text-align: center;
+    }
+
     .profile-header__name-wrap h1 {
         font-size: 8vw; 
         text-align: center;
-        padding-right: 0;
     }
-}
 
-/* ---------------------------------------------------------------- */
+    .profile-header__name-wrap h2 {
+        font-size: 3.5vw;
+        text-align: center;
+    }
 
-.profile-header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 5%;
-    margin-top: 2rem;
-}
-
-.profile-header__headshot-wrap {
-    width: 45%; 
-    display: flex;
-    justify-content: center;
-}
-
-.img {
-    width: 100%;
-    max-width: 450px; 
-}
-
-.profile-header__name-wrap {
-    content: '';
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    z-index: -1; 
-    width: 100%;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.profile-header__name-wrap h1 {
-    color: white; 
-    font-family: montserrat-bold; 
-    font-size: 4vw; 
-    opacity: 0.5; 
-    text-align: right;
-    padding-right: 10%;
-}
-
-.profile-header__name-wrap h2 {
-    padding-right: 10%; 
-    color: gray; 
-    font-size: 1vw;
-    opacity: 0.5;
-}
-
-.profile-header__stat-block--dl {
-    display: grid;
-    grid-template-columns: auto auto; 
-    gap: 10px 30px;
-    justify-content: flex-end; 
-    margin-top: 2rem;
-    color: black;
-    font-family: montserrat-medium, sans-serif;
-    font-size: 14px;
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end right;
-}
-
-.profile-header__stat-block--major {
-    display: grid;
-    grid-template-columns: auto auto; 
-    gap: 10px 30px;
-    justify-content: flex-end; 
-    margin-top: 2rem;
-    color: black;
-    font-family: montserrat-medium, sans-serif;
-    font-size: 14px;
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end right;
-}
-
-.profile-header__stat-block--year {
-    display: grid;
-    grid-template-columns: auto auto; 
-    gap: 10px 30px;
-    justify-content: flex-end; 
-    margin-top: 2rem;
-    color: black;
-    font-family: montserrat-medium, sans-serif;
-    font-size: 14px;
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end right;
-}
-
-.stat-block__label {
-    font-family: montserrat-bold, sans-serif;
-    font-size: 16px; 
-    color: black; 
-    opacity: 0.8;
-    margin-bottom: 2px;
-}
-
-
-.stat-block__stat {
-    font-family: montserrat-medium, sans-serif;
-    font-size: 14px;
-    color: black;
-    opacity: 0.5;
-}
-
-.main-content {
-    width: 95vw;
-    margin: 0 auto;
-    padding-top: 2rem; 
-}
-
-.content-container {
-    min-height: 150vh; 
-    color: white; 
-    font-family: montserrat-medium, sans-serif;
+   .status-blocks-wrapper {
+        flex-direction: column; 
+        width: 100%;
+        max-width: 300px; 
+        gap: 15px;
+        padding: 0;
+    }
 }
