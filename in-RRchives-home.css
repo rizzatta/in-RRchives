@@ -304,8 +304,7 @@ h2 {
 .status-blocks-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Space between the separated blocks */
-    /* Removed the background styles from the wrapper */
+    gap: 20px; 
 }
 
 .profile-header__stat-block {
