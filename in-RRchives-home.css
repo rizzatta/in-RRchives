@@ -49,8 +49,20 @@ body {
 }
 
 .main-navigation-bar {
+    position: fixed; 
     top: 0;
-    z-index: 100; 
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-hidden {
+    transform: translateY(-110%);
+}
+
+body {
+    padding-top: 2vh; 
 }
 
 .main-nav-body { 
