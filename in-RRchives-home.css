@@ -49,20 +49,8 @@ body {
 }
 
 .main-navigation-bar {
-    position: fixed; 
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; 
-    transition: transform 0.4s ease-in-out;
-}
-
-.nav-hidden {
-    transform: translateY(-110%);
-}
-
-body {
-    padding-top: 2vh; 
+    z-index: 100; 
 }
 
 .main-nav-body { 
@@ -356,6 +344,8 @@ h2 {
 }
 
 .content-container {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
     min-height: 150vh; 
     color: white; 
     font-family: montserrat-medium, sans-serif;
