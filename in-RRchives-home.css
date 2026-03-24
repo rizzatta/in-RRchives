@@ -351,6 +351,32 @@ h2 {
     font-family: montserrat-medium, sans-serif;
 }
 
+.content-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-bio {
+    background-color: #ffffff; 
+    border-radius: 40px;       
+    padding: 50px;            
+    color: rgb(73, 0, 0);     
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+    margin-bottom: 50px;
+}
+
+.widget-header h2 {
+    text-align: left;          
+    font-family: montserrat-bold, sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(73, 0, 0);
+    text-transform: uppercase;
+}
+
 
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
 
