@@ -354,7 +354,7 @@ h2 {
 .content-container {
     width: 100%;
     max-width: 1500px; 
-    max-height: 1000px;
+    max-height: 500px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -365,7 +365,7 @@ h2 {
     padding: 50px;            
     color: rgb(73, 0, 0);     
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    min-height: 700px;
+    min-height: 600px;
     margin-bottom: 50px;
 }
 
