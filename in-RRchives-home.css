@@ -382,8 +382,14 @@ h2 {
 .profile-bio__summary {
     text-align: left;
     font-size: 26px;
+     margin-top: 20px;
+     margin-bottom: 20px;
 }
 
+.profile-bio__button {
+    background-color: antiquewhite;
+    color: rgb(150, 0, 0)
+}
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
 
 @media (max-width: 768px) {
