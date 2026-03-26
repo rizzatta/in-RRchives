@@ -386,9 +386,25 @@ h2 {
      margin-bottom: 20px;
 }
 
-.profile-bio__button {
+.profile-bio__expand-button {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; 
     background-color: antiquewhite;
-    color: rgb(150, 0, 0)
+    color: rgb(150, 0, 0);
+    border: 2px solid rgb(73, 0, 0);
+    cursor: pointer;
+    font-family: montserrat-semibold-italic, sans-serif;
+    transition: transform 0.2s ease;
+}
+
+.profile-bio__expand-button:hover {
+    transform: scale(1.05);
 }
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
 
