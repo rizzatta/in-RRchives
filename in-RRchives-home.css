@@ -379,6 +379,10 @@ h2 {
     margin-top: 1px;
 }
 
+.profile-bio__summary {
+    text-align: left;
+    font-size: 26px;
+}
 
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
 
