@@ -382,8 +382,11 @@ h2 {
 .profile-bio__summary {
     text-align: left;
     font-size: 26px;
+<<<<<<< HEAD
      margin-top: 20px;
      margin-bottom: 20px;
+=======
+>>>>>>> 6992bcf (Added styling for profile bio summary section)
 }
 
 .profile-bio__expand-button {
