@@ -349,9 +349,6 @@ h2 {
     min-height: 150vh; 
     color: white; 
     font-family: montserrat-medium, sans-serif;
-}
-
-.content-container {
     width: 100%;
     max-width: 1500px; 
     max-height: 500px;
@@ -382,8 +379,14 @@ h2 {
 .profile-bio__summary {
     text-align: left;
     font-size: 26px;
-     margin-top: 20px;
-     margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8; 
+}
+
+.profile-bio__summary-item {
+    margin-bottom: 1px; 
+    padding-left: 15px; 
 }
 
 .profile-bio__expand-button {
