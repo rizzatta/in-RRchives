@@ -382,43 +382,36 @@ h2 {
 .profile-bio__summary {
     text-align: left;
     font-size: 26px;
-<<<<<<< HEAD
-<<<<<<< HEAD
      margin-top: 20px;
      margin-bottom: 20px;
-=======
->>>>>>> 6992bcf (Added styling for profile bio summary section)
 }
 
 .profile-bio__expand-button {
-    width: 150px; 
-    height: 150px;
-    border-radius: 50%;
-    display: flex;
+    width: auto;
+    height: auto;
+    padding: 12px 35px;
+    border-radius: 50px; 
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 20px; 
-    background-color: antiquewhite;
-    color: rgb(150, 0, 0);
-    border: 2px solid rgb(73, 0, 0);
     cursor: pointer;
+    background-color: antiquewhite; 
+    color: rgb(150, 0, 0);         
+    border: 1px solid rgb(73, 0, 0);
     font-family: montserrat-semibold-italic, sans-serif;
-    transition: transform 0.2s ease;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.profile-bio__button-label--open {
+    display: none; 
 }
 
 .profile-bio__expand-button:hover {
-    transform: scale(1.05);
-=======
-     margin-top: 20px;
-     margin-bottom: 20px;
+    background-color: #fdf5e6;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.profile-bio__button {
-    background-color: antiquewhite;
-    color: rgb(150, 0, 0)
->>>>>>> 13f9fb7 (Added margin to profile bio summary and styled the expand button)
-}
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
 
 @media (max-width: 768px) {
