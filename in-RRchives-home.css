@@ -384,9 +384,63 @@ h2 {
     line-height: 1.8; 
 }
 
-.profile-bio__summary-item {
-    margin-bottom: 1px; 
-    padding-left: 15px; 
+.profile-bio__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px; 
+}
+
+.profile-bio__summary {
+    flex: 1;
+    font-size: 18px; 
+    line-height: 2;
+    margin: 0;
+}
+
+.profile-bio__info-container.theme-red {
+    flex: 0 0 450px; 
+    background-color: rgb(73, 0, 0);
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.profile-bio__info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-bio__info-title {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.profile-bio__info-content {
+    color: white !important;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .profile-bio__expand-button {
@@ -422,47 +476,6 @@ h2 {
 .profile-bio__expand-button:hover {
     background-color: #fdf5e6;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.profile-bio__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    margin-bottom: 30px;
-}
-
-.profile-bio__summary {
-    flex: 1; 
-    list-style-position: inside;
-}
-
-.profile-bio__info-container.theme-red {
-    flex: 0 0 400px; 
-    background-color: rgb(73, 0, 0);
-    padding: 30px;
-    border-radius: 20px;
-}
-
-.profile-bio__info-container.theme-red {
-    flex: 0 0 350px;
-    background-color: rgb(73, 0, 0);
-    padding: 30px;
-    border-radius: 20px;
-    color: white;
-}
-
-.profile-bio__info-title {
-    color: rgba(255, 255, 255, 0.7) !important;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-.profile-bio__info-content {
-    color: white !important;
-    display: block;
-    margin-bottom: 15px;
 }
 
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
