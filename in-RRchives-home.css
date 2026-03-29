@@ -430,14 +430,19 @@ h2 {
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
-    min-height: 400px;
-    min-height: 400px; 
+    margin-bottom: 30px;
 }
 
-.profile-bio__left-content {
+.profile-bio__summary {
     flex: 1; 
-    display: flex;
-    flex-direction: column;
+    list-style-position: inside;
+}
+
+.profile-bio__info-container.theme-red {
+    flex: 0 0 400px; 
+    background-color: rgb(73, 0, 0);
+    padding: 30px;
+    border-radius: 20px;
 }
 
 .profile-bio__info-container.theme-red {
