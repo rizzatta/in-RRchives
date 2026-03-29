@@ -426,21 +426,38 @@ h2 {
 
 .profile-bio__inner {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    min-height: 400px;
     min-height: 400px; 
 }
 
-.profile-bio__info-container theme-red has-bg {
+.profile-bio__left-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-bio__info-container.theme-red {
+    flex: 0 0 350px;
+    background-color: rgb(73, 0, 0);
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.profile-bio__info-title {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.profile-bio__info-content {
+    color: white !important;
     display: block;
-    color: rgba(73, 0, 0, 0.6);
-    min-height: 50vh; 
-    color: white; 
-    font-family: montserrat-medium, sans-serif;
-    width: 100%;
-    max-width: 1500px; 
-    max-height: 500px;
-    margin: 0 auto;
-    padding: 20px;
+    margin-bottom: 15px;
 }
 
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
