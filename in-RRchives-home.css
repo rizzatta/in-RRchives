@@ -359,11 +359,12 @@ h2 {
 .profile-bio {
     background-color: #ffffff; 
     border-radius: 40px;       
-    padding: 50px;            
+    padding: 40px;            
     color: rgb(73, 0, 0);     
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    min-height: 600px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column; 
 }
 
 .widget-header h2 {
@@ -431,22 +432,31 @@ h2 {
     font-weight: bold;
 }
 
+.profile-bio__info-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+}
+
 .profile-bio__info-title {
+    order: 2;
     color: rgba(255, 255, 255, 0.7) !important;
     font-size: 14px;
     text-transform: uppercase;
 }
 
 .profile-bio__info-content {
-    color: white !important;
-    display: block;
-    margin-bottom: 15px;
+    order: 1; 
+    margin-bottom: 0 !important;
+    font-weight: bold;
 }
 
 .profile-bio__expand-button {
     align-self: center;      
     margin-top: auto;        
-    margin-bottom: -50px;    
+    margin-bottom: 0;    
     display: inline-flex;
     align-items: center;
     justify-content: center;
