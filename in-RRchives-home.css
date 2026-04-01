@@ -401,6 +401,26 @@ h2 {
     margin: 0;
 }
 
+.profile-bio__extra-content {
+    display: none;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.profile-bio.is-expanded .profile-bio__extra-content {
+    display: block;
+    opacity: 1;
+}
+
+.profile-bio.is-expanded .profile-bio__button-label {
+    display: none;
+}
+
+.profile-bio.is-expanded .profile-bio__button-label--open {
+    display: inline-block;
+}
+
 .profile-bio__info-container.theme-red {
     flex: 0 0 700px; 
     background-color: rgb(73, 0, 0);
