@@ -583,7 +583,6 @@ h2 {
     line-height: 1.2;
 }
 
-/* Mini Card Styling (Right) */
 .small-updates-stack {
     display: grid;
     gap: 20px;
@@ -632,6 +631,31 @@ h2 {
 .card-meta, .mini-meta {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-update, .mini-card {
+    position: relative; 
+    transition: transform 0.2s ease;
+}
+
+.hero-update:hover, .mini-card:hover {
+    transform: translateY(-5px); 
+}
+
+.hero-headline a, .mini-card h4 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.stretched-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+    pointer-events: auto;
 }
 
 /* ---------------- MOBILE OPTIMIZATION ----------------- */
