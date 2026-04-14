@@ -558,6 +558,13 @@ h2 {
     min-height: 450px;
     border-radius: 20px;
     overflow: hidden;
+    border: none; 
+    transition: outline 0.3s ease;
+}
+
+.hero-update:hover .hero-image-wrapper {
+    outline: 5px solid white;
+    outline-offset: -2px; 
 }
 
 .hero-image-wrapper img {
@@ -616,6 +623,12 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+    transition: outline 0.3s ease;
+}
+
+.mini-card:hover .mini-card-thumb img {
+    outline: 2px solid white;
+    outline-offset: -1.5px;
 }
 
 .card-tag {
