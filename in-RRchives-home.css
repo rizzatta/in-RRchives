@@ -346,7 +346,7 @@ h2 {
 .content-container {
     display: block;
     color: rgba(255, 255, 255, 0.6);
-    min-height: 150vh; 
+    min-height: auto !important;
     color: white; 
     font-family: montserrat-medium, sans-serif;
     width: 100%;
@@ -365,6 +365,15 @@ h2 {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column; 
+}
+
+.updates-section {
+    margin-bottom: 0; 
+}
+
+.site-footer {
+    margin-top: 20px !important; 
+    padding-top: 40px; 
 }
 
 .widget-header h2 {
