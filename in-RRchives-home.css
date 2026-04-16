@@ -53,6 +53,38 @@ body {
     z-index: 100; 
 }
 
+.main-navigation-bar {
+    position: fixed; /* Makes it stay on the screen */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* High z-index to stay above everything */
+    transition: transform 0.4s ease-in-out; /* Smooth sliding effect */
+}
+
+/* This class will be added/removed by JavaScript */
+.nav-hidden {
+    transform: translateY(-110%); /* Slides the nav completely off-screen */
+}
+
+/* Fix for the Logo (One Line) */
+.title-group {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.title-group h1 {
+    font-size: 32px; /* Adjusted for better fit on the bar */
+    display: inline-block;
+}
+
+.title-group h2 {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.6;
+}
+
 .main-nav-body { 
     width: 95vw;
     height: 13vh;
@@ -255,7 +287,7 @@ h2 {
     justify-content: space-between; 
     align-items: center; 
     padding: 0 10%;
-    margin-top: -1.5rem; 
+    margin-top: 10rem !important;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
